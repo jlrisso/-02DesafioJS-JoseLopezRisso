@@ -12,17 +12,20 @@
 
 
 
+const MAX_SAFE_INTEGER = 12;
 
-let myNumber = prompt("Dame un numero positivo para sumar sus cifras: ");
+let myNumber = Number(prompt("Dame un numero positivo para sumar sus cifras: "));
 const result = sumDigits(myNumber);
+console.log(result);
 
 
 
 
-function sumDigits(number=+number){
-    if (!number || number <0) return -1;
+function sumDigits(number){
+    if (!number || number <0 || `${number}`.length> MAX_SAFE_INTEGER) return -1;
     if (number<10) return number;
 
+    
     const numArray=number.toString().split('');
     let sum=0, myString=`${number} = `;
     
