@@ -1,0 +1,1 @@
+FUNCIONAMIENTO: Una vez ingresado un número me suma las cifras del mismo y me va mostrando por consola los resultados hasta llegar a una sola cifra. La Función devuelve la sumatoria final.
