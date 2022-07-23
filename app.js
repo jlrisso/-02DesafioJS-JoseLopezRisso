@@ -20,12 +20,9 @@ console.log(result);
 
 
 
-
 function sumDigits(number){
     if (!number || number <0 || `${number}`.length> MAX_SAFE_INTEGER) return -1;
     if (number<10) return number;
-    console.log(number);
-
     
     const numArray=number.toString().split('');
     let sum=0, myString=`${number} = `;
