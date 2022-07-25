@@ -3,7 +3,7 @@
  * 
  * @Author: JOSE LOPEZ RISSO 
  * @Email: jal.risso@gmail.com
- * @Date: 22-07-2022 
+ * @Date: 25-07-2022 
  * @License: 
  * 
  * 
@@ -25,11 +25,11 @@ function sumDigits(number){
     if (number<10) return number;
     
     const numArray=number.toString().split('');
-    let sum=0, myString=`${number} = `;
-    
-    for(let i=0, len = numArray.length; i< len; sum+= +numArray[i], myString+=`${numArray[i++]} + `);
+    let sum=0, myString=`${number} = ${numArray.join(" + ")}`; 
 
-    console.log(myString=myString.slice(0,myString.length-2)+`= ${sum}`);
+    for(let i=0, len = numArray.length; i< len; sum+= +numArray[i++]);
+
+    console.log(myString+=` = ${sum}`);
     return sumDigits(sum);
 }
 
