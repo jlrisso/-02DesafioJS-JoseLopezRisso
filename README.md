@@ -1,1 +1,1 @@
-FUNCIONAMIENTO: Una vez ingresado un número me suma las cifras del mismo y me va mostrando por consola los resultados hasta llegar a una sola cifra. La Función devuelve la sumatoria final. (Se utilizaron conceptos de Arrays para poder implementarla)
+FUNCIONAMIENTO: Una vez ingresado un número me suma las cifras del mismo y me va mostrando por consola los resultados hasta llegar a una sola cifra. La función devuelve la sumatoria final. (Se utilizaron conceptos de Arrays y de recursividad para poder implementar la función)
